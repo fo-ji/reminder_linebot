@@ -1,6 +1,6 @@
 class WebhookController < ApplicationController
   #API 機能の場合はCSRFの対策は必要なし
-  protect_from_forgey with: :null_session
+  protect_from_forgery with: :null_session
 
   def reminder
     reminders = get_reminders
