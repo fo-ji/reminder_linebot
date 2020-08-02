@@ -1,6 +1,6 @@
 require 'date'
 
-class YogaRagistrationService
+class YogaRegistrationService
   def reminder(today)
     day_of_week = today.wday
     week_of_month = get_week_of_month(today)
