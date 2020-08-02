@@ -2,10 +2,10 @@ require 'date'
 
 class ReminderService
   #ゴミ出し、ヨガのリマインダー定義
-  def initialize(today = Date::today, garbage_service = GarbageService.new, yoga_registration_service = YogaRagistrationService.new)
+  def initialize(today = Date::today, garbage_service = GarbageService.new, yoga_registration_service = YogaRegistrationService.new)
     @today = today
     @garbage_service = garbage_service
-    @yoga_registration_service = yoga_registartion_service
+    @yoga_registration_service = yoga_registration_service
   end
 
   #check_remindersの呼び出しメソッド
