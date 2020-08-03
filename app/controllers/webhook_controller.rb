@@ -2,6 +2,7 @@ class WebhookController < ApplicationController
   #API 機能の場合はCSRFの対策は必要なし
   protect_from_forgery with: :null_session
 
+  #自身のuserIdを取得する為のみに使用
   def callback
     event = params["events"][0]
     logger.info(event)
@@ -19,7 +20,6 @@ class WebhookController < ApplicationController
     end
   end
 
-  #クラス内のみアクセス
   private
   
   def get_reminders
