@@ -3,7 +3,8 @@ class WebhookController < ApplicationController
   protect_from_forgery with: :null_session
 
   def callback
-    logger.info(params)
+    event = params["events"][0]
+    logger.info(event)
   end
 
   def reminder
