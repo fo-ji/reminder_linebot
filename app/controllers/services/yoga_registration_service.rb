@@ -8,8 +8,6 @@ class YogaRegistrationService
     case day_of_week
       when 0
         "ところでヨガの次の予約した？"
-      when 1
-        "テスト！！"
       when 3
         "ストレッチだけでもしとこっか？"
       else

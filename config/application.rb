@@ -16,6 +16,7 @@ module ReminderLinebot
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
+    #自作ファイルが上手く読み込まれなかった為、手動で追加
     config.autoload_paths += %W(#{config.root}/app/controllers/services)
     config.autoload_paths += %W(#{config.root}/lib)
   end
